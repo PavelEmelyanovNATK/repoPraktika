@@ -1,8 +1,6 @@
 .container{
-    max-width: 1000;
-    margin:0 25% 0 25%;
-    width:50%;
-    padding: 0 15px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 body{
@@ -11,24 +9,201 @@ body{
 
 header{
     background-color: #000000;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header__menu{
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: right;
 }
 
 .header__text{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 15px;
     line-height: 15px;
     text-align: center;
     color: #72727A;
 
-    margin: 10px;
+    padding: 10px;
 
     text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.header__text:hover{
+    border-radius: 6px;
+    background-color: #8E8E98;
+    border: 9px 10px 9px 11px;
+    color: #000000;
+}
+
+.preview__main__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 99px;
+    line-height: 112px;
+
+    letter-spacing: 1.12px;
+
+    color: #FFFFFF;
+
+    margin: 0;
+}
+
+.textBox{
+    display: inline-flex;
+    height: 50px;
+
+    width: 483px;
+
+    margin: 16px 0;
+    padding: 0;
+}
+
+.textBox__inputText{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.375px;
+    
+    background-color: #8E8E9833;
+
+    color: #FFFFFF;
+
+    border-radius: 8px 0px 0px 8px;
+
+    outline: none;
+
+    border: none;
+    border-style: none;
+
+    margin: 0px;
+    padding-left:10px;
+
+    height: 48px;
+    width: 348px;
+}
+
+.textBox__btn{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.375px;
+    
+    background-color: #47474C;
+    color: #FFFFFF;
+
+    border-radius: 0px 8px 8px 0px;
+
+    margin:  0;
+
+    height: 100%;
+    width: 105px;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition: 0.2s;
+}
+
+.textBox__btn:active{
+    background-color: #6d6d75;
+}
+
+.textUnderTB{
+    display: flex;
+}
+
+.textUnderTB p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #47474C;
+}
+
+.textUnderTB a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-decoration: none;
+
+    color: #8E8E98;
+}
+
+.bottomPanel{
+    display: flex;
+    align-items: flex-end;
+
+    margin-top:75px;
+}
+
+.bottomPanel__text{
+    border-radius: 6px;
+    background-color: #8E8E98;
+
+    width:max-content;
+
+    align-self: center;
+}
+
+.bottomPanel__text p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #1C1C1E;
+
+    padding:6px 12px;
+}
+
+.bottomPanel__text a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.message__btn{
+    background-color: #47474C;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+
+    padding: 17px;
+    margin: 16px;
+
+    width:min-content;
+    height: min-content;
+
+    align-self: right;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.message__btn:active{
+    background-color: #6d6d75;
 }
