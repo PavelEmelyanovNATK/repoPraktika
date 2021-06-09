@@ -15,7 +15,7 @@ header{
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
-    justify-content: right;b  
+    justify-content: flex-end;
 }
 
 .header__text{
