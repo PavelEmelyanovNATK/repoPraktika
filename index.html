@@ -18,7 +18,7 @@
         <nav class="container header__menu">
           <a class="header__text" href="#product">Product</a>
           <a class="header__text" href="#plans">Plans</a>
-          <a class="header__text" href="#">Blog</a>
+          <a class="header__text" href="#blog">Blog</a>
           <a class="header__text" href="#">Get Updates</a>
         </nav>
   </header>
@@ -35,14 +35,20 @@
           </h1>
         </header>
     
-        <section class="textBox">
-         <input class="textBox__input" type="text">
-          <button class="textBox__btn" href="#">Notify Me ✌️</button>
-        </section>
+        <div class="textBox-container">
+          <form class="textBox">
+            <input class="textBox__input" type="email" required="">
+            <button class="textBox__btn preview-btn" type="submit">Notify Me ✌️</button>
+          </form>
 
-        <footer class="textUnderTB">
-          <h6>Be first on launch and updates. <a href="#">GDPR</a> ready.</h6>
-        </footer>
+          <footer >
+            <h6 class="textUnderTB">
+              Be first on launch and updates.
+              <a href="#">GDPR</a> 
+              ready.
+            </h6>
+          </footer>
+        </div>
       </article>
     </div>
 
@@ -217,8 +223,57 @@
       <header class="feature-header">Insights.</header>
       <h2 class="feature-text">Get real-time analytics about your presentation decks.</h2>
     </article>
-  
   </section>
+
+  <section class=" container blog-block" id="blog">
+    <header class="blog-header">Blog 🎓<span class="blog-header-gray">What’s new?</span></header>
+    <figure class="news">
+      <div class="blog1"></div>
+      <div class="blog2"></div>
+      <div class="blog3"></div>
+    </figure>
+    <footer>
+      <button class="read-all__btn">Read all</button>
+    </footer>
+  </section>
+
+  <footer class="container footer">
+    <div class="textBox-container">
+      <form class="textBox textBox-footer">
+        <input class="textBox__input" type="email" required="">
+        <button class="textBox__btn preview-btn" type="submit">Subscribe</button>
+      </form>
+
+      <footer >
+        <h6 class="textUnderTB">
+          Get news and updates.
+          <a href="#">GDPR</a> 
+          ready.
+        </h6>
+      </footer>
+    </div>
+
+    <div class="footer-column column-dekks">
+      <header>Dekks</header>
+      <a href="#">Product</a>
+      <a href="#">Plans</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="footer-column column-company">
+      <header>Company</header>
+      <a href="#">About</a>
+      <a href="#">Press</a>
+      <a class="jobs-ref"href="#">Jobs</a>
+    </div>
+
+    <div class="footer-column column-legal">
+      <header>Legal</header>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </footer>
 </body>
 
 </html>
