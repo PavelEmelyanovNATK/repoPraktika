@@ -15,7 +15,7 @@ header{
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
-    justify-content: right;
+    justify-content: right;b  
 }
 
 .header__text{
@@ -40,7 +40,7 @@ header{
     color: #000000;
 }
 
-.preview__main__text{
+h1{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -55,22 +55,24 @@ header{
 }
 
 .textBox{
-    display: inline-flex;
+    display: flex;
     height: 50px;
 
     width: 483px;
 
     margin: 16px 0;
     padding: 0;
-}
 
-.textBox__inputText{
-    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.375px;
+}
+
+.textBox__input{
     text-align: left;
     letter-spacing: 0.375px;
     
@@ -85,32 +87,27 @@ header{
     border: none;
     border-style: none;
 
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     padding-left:10px;
 
-    height: 48px;
-    width: 348px;
+    height: 100%;
+    width: 100%;
 }
 
 .textBox__btn{
     text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.375px;
     
     background-color: #47474C;
     color: #FFFFFF;
 
     border-radius: 0px 8px 8px 0px;
 
-    margin:  0;
+    margin: 0;
+    padding: 0;
 
     height: 100%;
-    width: 105px;
+    width:30%;
 
     border:none;
 
@@ -148,35 +145,38 @@ header{
     color: #8E8E98;
 }
 
-.bottomPanel{
-    display: flex;
-    align-items: flex-end;
+.grid-container{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
 
     margin-top:75px;
 }
 
 .bottomPanel__text{
-    border-radius: 6px;
-    background-color: #8E8E98;
+    grid-row: 1/2;
+    grid-column: 2/3;
 
-    width:max-content;
-
-    align-self: center;
-}
-
-.bottomPanel__text p{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
 
+    width:max-content;
+    height:max-content;
+
+    justify-self: center;
+    align-self: center;
+
     color: #1C1C1E;
 
     padding:6px 12px;
+
+    background-color: #8E8E98;
+    border-radius: 6px;
 }
 
-.bottomPanel__text a{
+.bottomPanel__text__ref{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -188,20 +188,23 @@ header{
 }
 
 .message__btn{
+    grid-column: 3;
+    grid-row: 1/2;
+
     background-color: #47474C;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 
     padding: 17px;
     margin: 16px;
 
-    width:min-content;
+    width:  min-content;
     height: min-content;
-
-    align-self: right;
 
     cursor: pointer;
 
     transition: 0.2s;
+
+    justify-self: right;
 }
 
 .message__btn:active{
