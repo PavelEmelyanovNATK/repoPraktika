@@ -1,5 +1,5 @@
 .container{
-    max-width: 1000px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -7,7 +7,7 @@ body{
     background-color: #000000;
 }
 
-header{
+.header{
     background-color: #000000;
 }
 
@@ -209,4 +209,78 @@ h1{
 
 .message__btn:active{
     background-color: #6d6d75;
+}
+
+.picture-block{
+    width: 1408px;
+    height: max-content;
+    margin: 0 auto;
+
+    background-color: #242427;
+}
+
+.picture-block__header{
+    height:25px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #323235;
+}
+
+.pbh__square{
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+
+    background-color: #242426;
+}
+
+.picture-block__pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    height:855px;
+}
+
+.pb__figure__border{
+    margin: 0px;
+    padding:0;
+    border-radius: 6px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-triangle__border{
+    width: 448px;
+    height: 195px;
+
+    background-color: #25E197;
+}
+
+.yellow-circle__border{
+    width: 912px;
+    height: 195px;
+
+    background: #FFD233;
+
+}
+
+.purple-circle__border{
+    width: 912px;
+    height: 612px;
+
+    background: #792EFF;
+}
+
+.gray-square__border{
+    width: 450px;
+    height: 612px;
+
+    background: #C4C4C8;
 }
