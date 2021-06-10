@@ -23,17 +23,14 @@
         </nav>
   </header>
 
-  <section class="preview">
+  <section class="preview-block">
     <div class="container">
-      <article class="promo">
-        <header>
-          <h1>
-            Presentations <br>
-            Next Generation <br>
-            Keynotes Proposals <br>
-            Moodboards Slides
-          </h1>
-        </header>
+        <h1>
+          Presentations <br>
+          Next Generation <br>
+          Keynotes Proposals <br>
+          Moodboards Slides
+        </h1>
     
         <div class="textBox-container">
           <form class="textBox">
@@ -49,42 +46,45 @@
             </h6>
           </footer>
         </div>
-      </article>
     </div>
 
     <footer class="grid-container">
           <p class="bottomPanel__text">By continuing to use this site you consent with our <a class="bottomPanel__text__ref" href="#">cookie policy</a>.</p>
-          <img class="message__btn" src="img/Message.svg" alt="msg">
+          
+          <button class="message__btn"></button>
     </footer>
   </section>
 
-  <section class="picture-block" id="product">
-    <header class="picture-block__header">
-      <span class="pbh__square"></span>
-      <span class="pbh__square"></span>
-      <span class="pbh__square"></span>
-    </header>
+  <section class="product-block" id="product">
+    <section class="picture-block">
+      <header class="picture-block__header">
+        <span class="pbh__square"></span>
+        <span class="pbh__square"></span>
+       <span class="pbh__square"></span>
+      </header>
 
-    <section class="picture-block__pictures">
-      <figure class="pb__figure__border green-triangle__border"><img class="pb__figure" src="img/Triangle.svg" alt="tr"></figure>
-      <figure class="pb__figure__border yellow-circle__border"><img class="pb__figure" src="img/Circle.svg" alt="cr"></figure>
-      <figure class="pb__figure__border purple-circle__border"><img class="pb__figure" src="img/Circle.svg" alt="cr"></figure>
-      <figure class="pb__figure__border gray-square__border"><img class="pb__figure" src="img/Square.svg" alt="sq"></figure>
+      <div class="picture-block__pictures">
+        <figure class="pb__figure__border green-triangle__border"><img class="pb__figure" src="img/Triangle.svg" alt="tr"></figure>
+        <figure class="pb__figure__border yellow-circle__border"><img class="pb__figure" src="img/Circle.svg" alt="cr"></figure>
+        <figure class="pb__figure__border purple-circle__border"><img class="pb__figure" src="img/Circle.svg" alt="cr"></figure>
+        <figure class="pb__figure__border gray-square__border"><img class="pb__figure" src="img/Square.svg" alt="sq"></figure>
+      </div>
     </section>
   </section>
 
-  <section class="container plans-block" id="plans">
-    <header class="quote-header">For creators, by creators 👈</header>
-    <h2>The all-in-one presentation app for creative troops and solo forces. Create, share and view ideas in an engaging and powerful new way. A design driven deck engine, that speeds up and simplifies presentations for everyone, with any content on any screen. Present hands-off, remote or IRL.</h2>
-    <footer class="quote-footer">
-      <h5>
-        Dekks is coming this spring. Are you an enterprise with special requirements? <a href="#" class="quote-ref">Tell now</a>
-        we can meet your company policy.
-      </h5>
-    </footer>
-  </section>
+  <main class="plans-block" id="plans">
+    <section class="container plans-quote">
+      <header class="quote-header">For creators, by creators 👈</header>
+      <h2>The all-in-one presentation app for creative troops and solo forces. Create, share and view ideas in an engaging and powerful new way. A design driven deck engine, that speeds up and simplifies presentations for everyone, with any content on any screen. Present hands-off, remote or IRL.</h2>
+      <footer class="quote-footer">
+        <h5>
+          Dekks is coming this spring. Are you an enterprise with special requirements? <a href="#" class="quote-ref">Tell now</a>
+          we can meet your company policy.
+        </h5>
+      </footer>
+    </section>
 
-  <section class="abilities">
+    <section class="abilities">
     <article class="ability">
       <h5 class="ability-title">Design</h5>
       <header class="quote-header">Born to perform.</header>
@@ -123,13 +123,13 @@
         <img class="image-footer__image" src="img/content1.svg" alt="cntnt1">
      </div>
     </article>
-  </section>
+    </section>
 
-  <section class="container motivation-block">
+    <section class="container motivation-block">
     <h1>Everything you need to collaborate tighter, create faster and present better.</h1>
-  </section>
+    </section>
 
-  <section class="abilities">
+    <section class="abilities">
     <article class="ability">
       <h5 class="ability-title">Experience</h5>
       <header class="quote-header">Stop clicking and start scrolling.</header>
@@ -165,77 +165,94 @@
         <img class="image-footer__image" src="img/managment3.svg" alt="mgmnt3">
      </div>
     </article>
-  </section>
+    </section>
 
-  <section class="container plans-footer">
+    <section class="container plans-footer">
     <header class="quote-header">Under the hood ⚡️</header>
       <h2>
         Made for speed and zero <br>
         bottlenecks.
       </h2>
-  </section>
+    </section>
 
-  <section class="container features">
-    <article class="feature">
+    <section class="container features">
+    <figure class="feature">
       <img class="feature-ico" src="img/identities1.svg" alt="idnt1">
-      <header class="feature-header">Identities.</header>
-      <h2 class="feature-text">Keep your identity consistent and your resources in sync.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Identities.</h2>
+        <p class="feature-text">Keep your identity consistent and your resources in sync.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/blocks1.svg" alt="blk1">
-      <header class="feature-header">Blocks.</header>
-      <h2 class="feature-text">Create and save custom slide layouts with easy drag & drop blocks.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Blocks.</h2>
+        <p class="feature-text">Create and save custom slide layouts with easy drag & drop blocks.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/layouts1.svg" alt="lts1">
-      <header class="feature-header">Layouts.</header>
-      <h2 class="feature-text">Design flexible layouts for any device and every screen.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Layouts.</h2>
+        <p class="feature-text">Design flexible layouts for any device and every screen.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/controls1.svg" alt="ctrl1">
-      <header class="feature-header">Controls.</header>
-      <h2 class="feature-text">Simply admin your team, workspace and integrations.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Controls.</h2>
+        <p class="feature-text">Simply admin your team, workspace and integrations.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/assets1.svg" alt="asts1">
-      <header class="feature-header">Assets.</header>
-      <h2 class="feature-text">Use the smart asset library to manage your content with ease.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Assets.</h2>
+        <p class="feature-text">Use the smart asset library to manage your content with ease.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/collaboration1.svg" alt="clb1">
-      <header class="feature-header">Collaboration.</header>
-      <h2 class="feature-text">Edit with your team in real-time or invite view only guests.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Collaboration.</h2>
+        <p class="feature-text">Edit with your team in real-time or invite view only guests.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/merge1.svg" alt="mrg1">
-      <header class="feature-header">Merge.</header>
-      <h2 class="feature-text">Import your slides dynamically from other decks for rapid creation.</h2>
-    </article>
+      <figcaption>
+        <h2 class="feature-header">Merge.</h2>
+        <p class="feature-text">Import your slides dynamically from other decks for rapid creation.</p>
+      </figcaption>
+    </figure>
 
-    <article class="feature">
+    <figure class="feature">
       <img class="feature-ico" src="img/insights1.svg" alt="isg1">
-      <header class="feature-header">Insights.</header>
-      <h2 class="feature-text">Get real-time analytics about your presentation decks.</h2>
-    </article>
-  </section>
+      <figcaption>
+        <h2 class="feature-header">Insights.</h2>
+        <p class="feature-text">Get real-time analytics about your presentation decks.</p>
+      </figcaption>
+    </figure>
+    </section>
 
-  <section class=" container blog-block" id="blog">
+    <section class=" container blog-block" id="blog">
     <header class="blog-header">Blog 🎓<span class="blog-header-gray">What’s new?</span></header>
     <figure class="news">
       <div class="blog1"></div>
       <div class="blog2"></div>
       <div class="blog3"></div>
     </figure>
-    <footer>
+    <form>
       <button class="read-all__btn">Read all</button>
-    </footer>
-  </section>
+    </form>
+    </section>
+  </main>>
 
   <footer class="container footer">
     <div class="textBox-container">
